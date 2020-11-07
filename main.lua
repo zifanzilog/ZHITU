@@ -1,7 +1,7 @@
 i = 0
 while true do
 i=i+1
-print("智图学院")
+print("智图学院222")
 if i>500 then
 i=-500
 else
