@@ -1,4 +1,5 @@
 i = 0
+--厉害
 while true do
 i=i+1
 print("智图学院222")
