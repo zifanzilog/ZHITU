@@ -5,7 +5,7 @@ print("智图学院")
 if i>500 then
 i=-500
 else
-touchMove(1, 0, i)
+touchMove(1, 100, 100+i)
 end
 mSleep(50)
 end
