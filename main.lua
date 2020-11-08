@@ -13,5 +13,5 @@ i=i+1
 		touchUp(1, x, y)  
     end
 print("循环"..i)
-mSleep(50)
+mSleep(10000)
 end
