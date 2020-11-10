@@ -39,7 +39,7 @@ function slide_d(t,w)
     touchMove(1, x1+Lx, y1+Ly)  --[[移动]]
     -- showHUD(id,"",12,"0xffff0000","0xffffff00",0,x1+Lx, y1+Ly,20,20)
     -- ptable({x1+Lx,y1+Ly})
-    mSleep(20)
+    -- mSleep(20)
   end
   mSleep(50)
   touchUp(1, x1+Lx, y1+Ly)  --[[松开]]
@@ -57,6 +57,7 @@ end
 while true do
 i=i+1
 slide_d({492,1407,563,603},5)
+mSleep(1000)
 x, y = findColor({0, 0, 1079, 2247}, 
 "1002|1186|0xece8e8,994|1172|0xebe7e7,1021|1166|0xeeeae9,1032|1181|0xeceae8,976|1192|0xebe8e8,1001|1202|0xe8e7e7,990|1357|0xe6e6e6,1019|1363|0xe6e6e6,1003|1402|0xe6e6e6,974|1401|0xe6e6e6,1009|1560|0xe6e6e6,1013|1582|0xe6e6e6,1025|1578|0xe5e5e5,981|1581|0xe5e4e5,962|1590|0xe6e6e6",
 95, 0, 0, 0)
