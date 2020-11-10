@@ -58,9 +58,9 @@ while true do
 i=i+1
 -- slide_d({492,1407,563,603},5)
 touchDown(1, 492,1407)
-mSleep(50)
+mSleep(100)
 touchMove(1,563,603)
-mSleep(50)
+mSleep(100)
 touchUp(1, 563,603)  
 mSleep(1000)
 x, y = findColor({0, 0, 1079, 2247}, 
