@@ -1,17 +1,25 @@
 i=0
 --厉害
+function tap(x, y)
+  touchDown(1, x, y)
+  mSleep(50)
+  touchMove(1, x, y)
+  mSleep(50)
+  touchUp(1, x, y)  
+end
 while true do
 i=i+1
-    x, y = findColor({0, 0, 1079, 2247}, 
-    "0|0|0xfbad05,-13|-24|0xfcfcfc,7|-24|0xffffff,-1|-34|0x000000,21|-15|0x000002,40|1|0xf9ac00,28|14|0xe5294a,-5|18|0xea0f13,0|47|0xffffff,-40|57|0xfdbc24,-58|15|0xffffff,-55|-14|0xffffff,48|50|0xffffff,-37|81|0xfdbc24,-49|75|0xfffeff",
-    95, 0, 0, 0)
-    if x > -1 then
-		touchDown(1, x, y)
-		mSleep(50)
-		touchMove(1, x, y)
-		mSleep(50)
-		touchUp(1, x, y)  
-    end
+touchDown(1, 492,1407)
+mSleep(50)
+touchMove(1, 563,603)
+mSleep(50)
+touchUp(1, 563,603)  
+x, y = findColor({0, 0, 1079, 2247}, 
+"1002|1186|0xece8e8,994|1172|0xebe7e7,1021|1166|0xeeeae9,1032|1181|0xeceae8,976|1192|0xebe8e8,1001|1202|0xe8e7e7,990|1357|0xe6e6e6,1019|1363|0xe6e6e6,1003|1402|0xe6e6e6,974|1401|0xe6e6e6,1009|1560|0xe6e6e6,1013|1582|0xe6e6e6,1025|1578|0xe5e5e5,981|1581|0xe5e4e5,962|1590|0xe6e6e6",
+95, 0, 0, 0)
+if x > -1 then
+  tap(x, y)
+end
 print("循环"..i)
-mSleep(10000)
+mSleep(2000)
 end
