@@ -54,14 +54,14 @@ function tap(x, y)
   mSleep(50)
   touchUp(1, x, y)  
 end
-print("更新版本:1.0.0")
+print("更新版本:1.0.1")
 while true do
 i=i+1
 -- slide_d({492,1407,563,603},5)
 touchDown(1, 492,1407)
-mSleep(100)
+mSleep(50)
 touchMove(1,563,603)
-mSleep(100)
+mSleep(50)
 touchUp(1, 563,603)  
 mSleep(1000)
 x, y = findColor({0, 0, 1079, 2247}, 
