@@ -54,6 +54,7 @@ function tap(x, y)
   mSleep(50)
   touchUp(1, x, y)  
 end
+print("更新版本:1.0.0")
 while true do
 i=i+1
 -- slide_d({492,1407,563,603},5)
